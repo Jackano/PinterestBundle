@@ -1,0 +1,7 @@
+parameters:
+#    zeldanet_pinterest.example.class: Zeldanet\PinterestBundle\Example
+
+services:
+#    zeldanet_pinterest.example:
+#        class: %zeldanet_pinterest.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

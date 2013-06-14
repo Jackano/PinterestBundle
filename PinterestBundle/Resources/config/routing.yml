@@ -1,0 +1,9 @@
+zeldanet_pinterest_homepage:
+    pattern:  /
+    defaults: { _controller: ZeldanetPinterestBundle:Default:index }
+zeldanet_pinterest_show:
+    pattern:  /{id}{placeholder}
+    requirements:
+         id: \d+
+         placeholder: "/?"
+    defaults: { _controller: ZeldanetPinterestBundle:Default:show }

@@ -1,0 +1,15 @@
+    <h1>TOP 10</h1>
+    <table cellpadding="4">
+    {% for entity in pins %}
+    <tr>
+        <td>
+            <img src="{{ entity.image }}" width="64" height="80" alt="" title="# {{ loop.index }}" />
+
+        </td>
+        <td><h2><a href="{{ entity.url }}" target="_blank">{{ entity.title }}</a></h2>
+        <b>{{ entity.actions }} {% trans %}actions{% endtrans %}</b> ({{ entity.repins }} {% trans %}repins{% endtrans %}, {{ entity.likes }} {% trans %}likes{% endtrans %})</td>
+
+        <td>{{ entity.date }}</td>
+    </tr>
+    {% endfor %}
+    </table>

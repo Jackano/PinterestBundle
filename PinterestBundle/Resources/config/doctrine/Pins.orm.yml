@@ -1,0 +1,70 @@
+Zeldanet\PinterestBundle\Entity\Pins:
+    type: entity
+    table: pins
+    fields:
+        id:
+            id: true
+            type: bigint
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: NONE
+        url:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        uri:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        title:
+            type: text
+            nullable: true
+        date:
+            type: string
+            length: 64
+            fixed: false
+            nullable: true
+        description:
+            type: text
+            nullable: true
+        image:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+        author:
+            type: string
+            length: 80
+            fixed: false
+            nullable: true
+        board:
+            type: string
+            length: 50
+            fixed: false
+            nullable: true
+        source:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+        actions:
+            type: integer
+            unsigned: false
+            nullable: false
+        repins:
+            type: integer
+            unsigned: false
+            nullable: false
+        likes:
+            type: integer
+            unsigned: false
+            nullable: false
+        updated:
+            type: string
+            length: 64
+            fixed: false
+            nullable: true
+    lifecycleCallbacks: {  }

@@ -1,0 +1,14 @@
+
+    <h1>{{ pin.title }}</h1>
+    <table cellpadding="4">
+    <tr>
+        <td>
+            <img src="{{ pin.image }}" width="128" height="160" alt="" title="# {{ pin.id }}" />
+
+        </td>
+        <td><h2><a href="{{ pin.url }}" target="_blank">{{ pin.description }}</a></h2>
+        <b>{{ pin.actions }} {% trans %}actions{% endtrans %}</b> ({{ pin.repins }} {% trans %}repins{% endtrans %}, {{ pin.likes }} {% trans %}likes{% endtrans %})</td>
+
+        <td>{{ pin.date }}</td>
+    </tr>
+    </table>
